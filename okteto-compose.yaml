@@ -1,0 +1,14 @@
+version: "latest"
+services:
+  worker:
+    build: .
+    environment:
+     - APP_ID=${APP_ID}
+     - API_HASH=${API_HASH}
+     - BOT_TOKEN=${BOT_TOKEN}
+     - LOGS_CHANNEL=${LOGS_CHANNEL}
+     - DB_CHANNEL=${DB_CHANNEL}
+     - MONGODB_URL=${MONGODB_URL}
+     - DOWNLOAD_LOCATION=${DOWNLOAD_LOCATION}
+     - BOT_OWNER=${BOT_OWNER}
+     - GOFILE_TOKEN=${GOFILE_TOKEN}
